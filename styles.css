@@ -1,0 +1,225 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+/* e-Ukraine (body) */
+@font-face {
+    font-family: "e-Ukraine";
+    src: url("/fonts/e-ukraine-regular_w.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "e-Ukraine";
+    src: url("/fonts/e-ukraine-medium_w.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "e-Ukraine";
+    src: url("/fonts/e-ukraine-bold_w.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* e-Ukraine Head (headings) */
+@font-face {
+    font-family: "e-Ukraine Head";
+    src: url("/fonts/e-ukrainehead-regular_w.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "e-Ukraine Head";
+    src: url("/fonts/e-ukrainehead-medium_w.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "e-Ukraine Head";
+    src: url("/fonts/e-ukrainehead-bold_w.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Usage */
+:root {
+    --font-body: "e-Ukraine", system-ui, sans-serif;
+    --font-head: "e-Ukraine Head", var(--font-body);
+}
+
+body {
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1,55;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-head);
+    line-height: 1,15;
+    letter-spacing: -0.01em;
+}
+
+h1 { font-weight: 700; font-size: clamp(2rem, 3.2vw, 3rem); }
+h2 { font-weight: 500; font-size: clamp(1.5rem, 2.2vw, 2rem); }
+
+p {
+    color: #1D3557;
+}
+
+
+.red {
+    color: #E63946;
+}
+
+.light {
+    color: #F1FAEE;
+}
+
+.aqua {
+    color: #A8DADC;
+}
+
+.light-blue {
+    color: #457B9D;
+}
+
+.dark-blue {
+    color: #1D3557;
+}
+
+
+body {
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.paragraph {
+    line-height: 150%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.margin-m {
+    margin: 8px 0 16px 0;
+}
+
+#hero2-section {
+    display: flex;
+    flex-direction: row;
+}    
+    
+#hero2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 40%;
+    height: 400px;
+    margin: 32px;
+    text-align: left;
+}
+  
+#hero2-logo {
+    height: 40px;
+    width: 40px;
+    background-image: url("/images/odesa-logo.svg");
+    background-size: contain;
+    background-position: start;
+    background-repeat: no-repeat;
+    
+}
+
+#hero2-img {
+    width: 60%;
+    height: 400px;
+    margin: 32px;
+    border-radius: 24px;
+    background-image: url("../images/odesa-main.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#activities-section {
+    background-color: #F1FAEE;
+    margin: 40px 0;
+    padding: 40px 0;
+    /* border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey; */
+}
+
+#activity-cards {
+    display: flex;
+    flex-direction: row;
+    margin: 32px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.activity-card {
+    flex: 0 1 calc(33.333% - 16px);
+    background-color: white;
+    box-sizing: border-box;
+    min-width: 240px;
+    padding: 8px;
+    border-radius: 16px;
+    text-align: start;
+    box-shadow: 0px 4px 8px #00000010
+}
+
+.activity-card:hover {
+    box-shadow: 0px 2px 8px #00000030
+}
+
+.activity-text {
+    margin: 0 8px;
+}
+
+.activity-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+#guide-section {
+    background-color:white;
+    margin: 0 0 32px 0;
+    padding: 16px;
+}
+
+#guide-card {
+    color: white;
+    font-size: large;
+    background-color: #1D3557;
+    width: 60%;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 24px;
+}
+
+#guide-pic {
+    width: 200px;
+    border-radius: 1000px;
+    margin-bottom: 8px;
+}
