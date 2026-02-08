@@ -103,7 +103,7 @@ p {
 
 
 body {
-    margin: 0;
+
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -122,6 +122,8 @@ body {
 }
 
 #hero2-section {
+    margin: 0 auto;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
 }    
@@ -167,9 +169,10 @@ body {
 }
 
 #activity-cards {
+    margin: 32px auto;
+    max-width: 1000px;
     display: flex;
     flex-direction: row;
-    margin: 32px;
     gap: 16px;
     flex-wrap: wrap;
 }
@@ -203,8 +206,9 @@ body {
 }
 
 #guide-section {
+    margin: 0 auto 32px auto;
+    max-width: 1000px;
     background-color:white;
-    margin: 0 0 32px 0;
     padding: 16px;
 }
 
